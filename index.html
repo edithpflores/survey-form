@@ -1,0 +1,82 @@
+<!--We begin with setting the basics-->
+<!DOCTYPE  html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Your opinion</title>
+    <!--Link the css-->
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <!--End of head-->
+
+  <!--Beggining of body-->
+  <body>
+    <!--1 Page title--> 
+    <h1 id="title">Online shopping survey</h1>
+    <!--2 Description-->
+    <p id="description">Thank you for your time, help us improve your experience</p>
+    
+    <!--3 Begginig of form element-->
+    <form id="survey-form">
+      <fieldset>
+
+      <!--4 Name input required-->
+        <label id="name-label">Name: <input id="name" name="name" type="text" required placeholder="Enter your First Name"/></label>
+      <!--Last name input required-->
+        <label id="last-name-label">Last Name: <input id="last-name" name="last-name" type="text" required placeholder="Enter your Last Name"/></label>
+
+      <!--5 Email field required-->
+      <!--6 type Email will make sure the email is formatted correctly-->
+        <label id="email-label">Email: <input id="email" name="email" type="email" required placeholder="Enter your email"/></label>
+
+        <!--7 Number input (age)-->
+        <!--8 With type=number prevents accepting other inputs--> 
+        <!--9 min="16" max="100" define the range of numbers you can enter-->
+        <label id="number-label">Age (Optional): <input id="number" type="number" name="age" min="16" max="100" placeholder="ex: 18"/></label>
+      </fieldset>
+
+      <!--Second fieldset-->
+      <fieldset>
+        <!--12 Select dropdown-->
+        <label id="dropdown-label">How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">Facebook</option>
+            <option value="2">Instagram</option>
+            <option value="3">TikTok</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <!--End of dropdown element-->
+      </fieldset>
+      <!--End of second fieldset-->
+
+      <!--Third fieldset-->
+       <!--13 Group of radio buttons-->
+       <fieldset><legend>How satisfied are you with your purchase?</legend>
+        <label id="satisfied" class="black"><input id="satisfied" type="radio" name="satisfaction" class="inline" value="satisfied"/>Satisfied</label>
+
+      <label id="unsatisfied" class="black"><input id="unsatisfied" type="radio" name="satisfaction" class="inline" value="unsatisfied"/>Unsatisfied</label>
+
+      <label id="neutral" class="black"><input id="neutral" type="radio" name="satisfaction" class="inline" value="neutral"/>Neutral</label>
+      </fieldset>
+
+      <!--Fourth field set-->
+      <fieldset>
+      <!--14 checkbox--><legend>What is your favorite category?</legend>
+        <label id="clothes" class="black"><input id="clothes" type="checkbox" name="category" value="clothes" class="inline"/>Clothes</label>
+
+        <label id="makeup" class="black"><input id="makeup" type="checkbox" name="category" value="makeup"class="inline"/>Makeup</label>
+
+        <label id="accesories" class="black"><input id="accesories" type="checkbox" name="category" value="accesories" class="inline"/>Accesories</label>
+
+      </fieldset>
+      <!--End of Fourth fieldset-->
+
+      <fieldset><legend>Let us know if you have any suggestions</legend>
+        <label id="suggestions"><textarea id="bio" name="bio" rows="3" cols="30" placeholder="We appreciate your opinion"></textarea></label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit"/>
+    </form>
+    </body>
+</html> 

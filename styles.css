@@ -1,0 +1,113 @@
+
+/*Title and description centered, they have different font sizes so we exclude that*/
+h1, p{
+  text-align: center;
+  margin: 1em auto;
+  color: #FFFAFB;
+}
+
+/*We customize the font size for the title, give it top margin and bottom, bottom smaller so it's not too far apart from subtitle(description) */
+h1 {
+  font-size: 60px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+/*Description size*/
+p {
+  font-size: 25px;
+}
+
+/*Background and font setup, we make a gradient with a .3 opacity so we can see the background image in url, no-repeat so our image is not small and repeated, it's fixed so it doesn't move as you scroll (found in https://stackoverflow.com/questions/36679649/how-to-add-a-color-overlay-to-a-background-image)
+The font of everything is Tahoma 18px*/
+body{
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(https://travellersworldwide.com/wp-content/uploads/2022/06/shutterstock_1376452181.png.webp) no-repeat center center fixed;
+  background-size:cover;
+  color: #26C2FC;
+  margin: 0;
+  font-family: Tahoma;
+  font-size: 18px;
+}
+
+/*Form customization, sets up how wide and long the form (white) is gonna be, gave it a padding so the text doesn't go all the way to the edge*/
+form {
+  width: 65vw;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background-color: #FFFFFF;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+
+/*Boxes should not be shown around fieldset but we leave a 3px bottomm line so it can separate each section with thin line */
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #FFC8D8;
+}
+
+/*The last fieldset would be the suggestions box, we don't need more section separation lines so we make it the border bottom of the fieldset box 0*/
+fieldset:last-of-type {
+  border-bottom: 0;
+}
+
+/*We're customizing the space between the label and the input boxes*/
+label {
+  display: block;
+  margin: 1rem 0;
+}
+
+/*We make the boxes 100% so they're the same size and give them a desired height so the bos it's not hard to read/type in*/
+input,
+textarea,
+select{
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+/*I wanted all the input areas to have the same color, size and padding*/
+input, textarea, select {
+  background-color: #FFEAF0;
+  border: 1px solid #FFEAF0;
+  color: #ffffff;
+  padding-left:7px;
+}
+
+/*Formatting the legend that was used on the satisfaction and category fieldset because if not they would be too close to the section lines.*/
+legend{
+  padding-top: 2em;
+}
+
+/*The select dropdown menu has the same format as other inputs but the white words couldn't be read so I override the white with a grey
+The class .black is to make the elements label of each option from radio buttons and checkboxes gray instead of blue.*/
+.black, select{
+  color: #898E90;
+}
+
+/*The width changes the size of the circle/checkbox the margin is how close the text is to the circle/check, and the vertical align in middle so it's inline wiuth the text*/
+.inline {
+  width: 15px;
+  margin: 0 0.7em 0 0;
+  vertical-align: middle;
+}
+
+/*Button setup*/
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #FF95B3;
+  border-color: white;
+  color: white;
+  min-width: 300px;
+}
+
+
