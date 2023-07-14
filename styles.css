@@ -1,0 +1,186 @@
+
+/*First we're gonna customize the header text to be centered*/
+.header{
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1px;
+  background-color: #9D6676;
+  font-size: 10px;
+  z-index: 99;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.header h1{
+  padding-left: 35px;
+}
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  font-size: 12px;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+li:hover, a:hover{
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 40px;
+}
+
+#background-caption{
+  text-align: center;
+  padding: 20% 0;
+  font-size: 30px;
+}
+
+#background-caption a{
+  padding: 4px;
+  text-align: center;
+  font-size: 15px;
+  border: 2px solid white;
+  text-decoration: none;
+}
+
+.background {
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://hips.hearstapps.com/hmg-prod/images/diana-princess-of-wales-sitting-on-a-step-at-her-home-news-photo-1627664140.jpg?crop=1xw:0.81573xh;center,top&resize=1200:*) no-repeat center center;
+  background-size:cover;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia;
+  color: #F8F5F5;
+}
+
+.tribute-info{
+  padding: 50px 10%;
+  background-color: #774554;
+  text-align: justify;
+  justify-content: center;
+}
+/*#420c18*/
+
+.tribute-info img{
+  filter: opacity(0.87) drop-shadow(0 0 0 #8A1A2E); 
+  display: block;
+  object-fit: cover;
+  max-width: 35vw;
+  min-width: 250px;
+  height: auto;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.img-div{
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  text-align:center;
+  padding: 40px 10%;
+  color: black;
+  background-color: #EFEAEB;
+}
+
+.image{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.img-caption{
+  padding: 10px 0 25px;
+}
+
+h2{
+  font-size: 40px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+p{
+  margin-top: 0;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+.gallery-section{
+  margin: 0 auto;
+  font-size: 30px;
+  background-color: #452733;
+  padding: 40px 0 30px 0;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 390px;
+  height: 390px;
+  object-fit: cover;
+  border: 10px solid #EFEAEB;
+}
+
+.learn-more{
+  padding: 15px 0 1px 0;
+  background-color: #9D6676;
+  text-align: center;
+}
+
+a{
+  color: #EFEAEB;
+}
